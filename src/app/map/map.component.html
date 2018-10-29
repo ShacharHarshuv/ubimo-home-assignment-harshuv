@@ -2,7 +2,6 @@
     <img id="map-img" src="assets/got-map.png" target="_blank" alt="">
     <app-ad @inOut *ngFor="let ad of ads" 
     [style.left]="ad.coordinates.x + '%'" [style.top]="ad.coordinates.y + '%'"
-    
     url={{ad.url}}
     type={{ad.type}}></app-ad> 
 
