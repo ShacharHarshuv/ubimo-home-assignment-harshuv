@@ -1,0 +1,32 @@
+#content{
+    max-width: 1810px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+
+    #map-panel{
+        height: 100vh;
+        overflow: auto;
+        background-color: rgb(182, 206, 235);
+    }
+    #log-panel{
+        height: 100vh;
+        overflow: auto;
+        box-sizing: border-box;
+
+        padding-top: 10px;
+        background-color: white;
+        margin: 0;
+
+        box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.5);
+        z-index: 1;
+
+        h2{
+            margin: 10px 20px;
+        }
+        
+        //TODO - create inner scroll here
+    }
+    
+}

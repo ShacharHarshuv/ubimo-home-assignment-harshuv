@@ -1,0 +1,18 @@
+#container{
+    position: absolute;
+
+    padding: 3px;
+    padding-bottom: 0;
+    background-color: white;
+    width: 150px;
+    box-shadow: 2px 2px 3px gray;
+    transform: translateX(-50%) translateY(-50%);
+
+    img, video{
+       width: 100%;
+    }
+}
+#container:hover{
+    width: 155px;
+    transition: linear 0.1s;
+}

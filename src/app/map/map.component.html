@@ -1,0 +1,7 @@
+<div id="map">
+    <img id="map-img" src="assets/got-map.png" target="_blank" alt="">
+    <app-ad *ngFor="let ad of ads" 
+    x={{ad.coordinates.x}} y={{ad.coordinates.y}} 
+    url={{ad.url}}
+    type={{ad.type}}></app-ad> 
+</div>

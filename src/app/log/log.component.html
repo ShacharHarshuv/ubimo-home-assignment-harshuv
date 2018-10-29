@@ -1,0 +1,26 @@
+<div id="filter-container">
+    <div id="filter">
+      <div class="input-container" ><input [(ngModel)]="startTime"  type="number" placeholder="Filter Start" id="filter-start" (focusout)="filterStart()"></div>
+      <div class="input-container" ><input [(ngModel)]="endTime" type="number" placeholder="Filter End" id="filter-end" (focusout)="filterEnd()" ></div>
+    </div>      
+</div>
+<div class="error" [class.invisible]="!error">Invalid Input <br> <i>Filter Start</i> must be a time before <i>Filter End</i></div>
+<ul [class.invisible]="error">
+  <li @in *ngFor="let i of indexToRender">
+    <a href="{{adLog[i].url}}" target="_blank">
+      <div>
+        <img src="../assets/ic_image_black_24px.svg" [class.invisible]="adLog[i].type!='IMAGE'">
+        <img src="../assets/ic_movie_creation_black_24px.svg" [class.invisible]="adLog[i].type!='VIDEO'">
+      </div>
+      <div>
+        <span class="ad-name">{{adLog[i].name}}</span>
+        <br>
+        <!-- <a href=""><img class="link-icon" src="../assets/ic_insert_link_black_24px.svg" alt=""></a> -->
+        <span class="time">({{adLog[i].coordinates.x}}, {{adLog[i].coordinates.y}})</span>
+        <span class="time">{{adLog[i].timeStr}}</span>
+      </div>
+    </a>
+  </li>
+</ul>
+
+<span class="no-ads" [class.invisible]="indexToRender.length>0">No Ads to present</span>

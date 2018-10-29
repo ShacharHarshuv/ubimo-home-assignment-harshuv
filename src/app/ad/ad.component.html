@@ -1,0 +1,8 @@
+<div id="container" [style.left]="x + '%'" [style.top]="y + '%'">
+  <a href={{url}}>
+    <img src={{url}} alt="" [class.invisible]="type!='IMAGE'">
+    <video muted onloadedmetadata="this.muted = true" autoplay
+    [class.invisible]="type!='VIDEO'"
+    src={{url}}></video>
+  </a>
+</div>
