@@ -6,4 +6,10 @@
     img{
         width: 100%;
     }
+
+    app-ad{
+        display: block; 
+        position: absolute; 
+        transform:  translate(-50%, -50%) scale(1);
+    }
 }

@@ -10,9 +10,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./map.component.scss'],
   animations: [
     trigger('inOut', [
-      state('void', style({opacity: 0})), 
+      state('void', style({opacity: 0, transform: 'translate(-50%, -50%) scale(0.1)'})), 
       transition('void <=> *',[
-        animate(500)
+        animate(200)
       ])
     ])
   ]

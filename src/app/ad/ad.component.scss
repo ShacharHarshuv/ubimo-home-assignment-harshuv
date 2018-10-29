@@ -1,12 +1,13 @@
 #container{
-    position: absolute;
+    //position: absolute;
 
     padding: 3px;
     padding-bottom: 0;
     background-color: white;
     width: 150px;
+    min-height: 80px;
     box-shadow: 2px 2px 3px gray;
-    transform: translateX(-50%) translateY(-50%);
+    //transform: translateX(-50%) translateY(-50%);
 
     img, video{
        width: 100%;
